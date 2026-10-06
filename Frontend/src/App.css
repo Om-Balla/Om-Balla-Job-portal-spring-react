@@ -1,0 +1,707 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #172033;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 76px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 8%;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #172033;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #2563eb;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-button {
+  background: transparent;
+  border: none;
+
+  padding: 10px 16px;
+
+  color: #374151;
+
+  font-size: 15px;
+}
+
+.nav-button:hover {
+  color: #2563eb;
+}
+
+.register-nav-button {
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 11px 20px;
+
+  font-size: 15px;
+}
+
+.register-nav-button:hover {
+  background: #1d4ed8;
+}
+
+.logout-button {
+  background: #ef4444;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 10px 17px;
+
+  font-size: 14px;
+}
+
+.logout-button:hover {
+  background: #dc2626;
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+  min-height: calc(100vh - 76px);
+}
+
+.hero {
+  min-height: 590px;
+
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(37, 99, 235, 0.10),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fbff,
+      #eef5ff
+    );
+
+  display: flex;
+  align-items: center;
+
+  padding: 60px 8%;
+}
+
+.hero-content {
+  max-width: 780px;
+}
+
+.hero-small-title {
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 64px;
+
+  line-height: 1.08;
+
+  margin: 0;
+
+  color: #172033;
+
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+.hero-description {
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  color: #64748b;
+
+  max-width: 650px;
+
+  margin-top: 25px;
+}
+
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.search-box {
+  margin-top: 35px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  padding: 8px;
+
+  display: flex;
+
+  max-width: 720px;
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.search-box input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  padding: 16px;
+
+  font-size: 15px;
+
+  min-width: 0;
+
+  color: #172033;
+}
+
+.search-box input + input {
+  border-left: 1px solid #e5e7eb;
+}
+
+.search-box button {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 7px;
+
+  padding: 0 25px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.search-box button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================
+   HOME INFO
+========================= */
+
+.home-info {
+  text-align: center;
+
+  background: white;
+
+  padding: 80px 20px;
+}
+
+.home-info h2 {
+  font-size: 32px;
+
+  margin-bottom: 15px;
+
+  color: #172033;
+}
+
+.home-info p {
+  color: #64748b;
+
+  font-size: 17px;
+
+  margin-bottom: 30px;
+}
+
+.primary-button {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 7px;
+
+  padding: 13px 28px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================
+   AUTH PAGES
+========================= */
+
+.auth-page {
+  min-height: calc(100vh - 76px);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 50px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f8fbff,
+      #eef5ff
+    );
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  padding: 40px;
+
+  box-shadow:
+    0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+.auth-header {
+  margin-bottom: 25px;
+}
+
+.auth-small-title {
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+.auth-header h1 {
+  margin: 0;
+
+  font-size: 30px;
+
+  color: #172033;
+}
+
+.auth-header p:last-child {
+  color: #64748b;
+
+  margin-top: 10px;
+}
+
+
+/* =========================
+   ROLE RADIO BUTTONS
+========================= */
+
+.role-selection {
+  margin-bottom: 25px;
+}
+
+.role-title {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+  color: #374151;
+}
+
+.role-option {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  border: 1px solid #dbe1ea;
+
+  border-radius: 7px;
+
+  padding: 11px 15px;
+
+  margin-right: 10px;
+
+  cursor: pointer;
+
+  color: #475569;
+
+  transition: 0.2s;
+}
+
+.role-option input {
+  accent-color: #2563eb;
+
+  cursor: pointer;
+}
+
+.role-option.selected {
+  border-color: #2563eb;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.auth-card form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.auth-card form label {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #374151;
+
+  margin-bottom: 7px;
+
+  margin-top: 14px;
+}
+
+.auth-card form input {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #dbe1ea;
+
+  border-radius: 7px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  color: #172033;
+}
+
+.auth-card form input:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.auth-button {
+  margin-top: 25px;
+
+  padding: 14px;
+
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+.auth-button:hover {
+  background: #1d4ed8;
+}
+
+.auth-message {
+  text-align: center;
+
+  margin-top: 18px;
+
+  color: #dc2626;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   JOBS PAGE
+========================= */
+
+.jobs-page {
+  padding: 55px 8%;
+
+  min-height: calc(100vh - 76px);
+
+  background: #f8fafc;
+}
+
+.jobs-page > h1 {
+  font-size: 38px;
+
+  margin-bottom: 8px;
+}
+
+.jobs-page > p {
+  color: #64748b;
+
+  margin-bottom: 35px;
+}
+
+.jobs-container {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 25px;
+}
+
+.job-card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  padding: 25px;
+
+  box-shadow:
+    0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.job-card h2 {
+  color: #172033;
+
+  margin-top: 0;
+}
+
+.job-card h3 {
+  color: #2563eb;
+}
+
+.job-card p {
+  color: #64748b;
+
+  line-height: 1.6;
+}
+
+.job-card button {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 6px;
+
+  padding: 11px 20px;
+
+  margin-top: 10px;
+}
+
+.job-card button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================
+   RECRUITER PAGE
+========================= */
+
+.recruiter-page {
+  padding: 50px 8%;
+
+  background: #f8fafc;
+
+  min-height: calc(100vh - 76px);
+}
+
+.recruiter-page h1 {
+  font-size: 38px;
+}
+
+.recruiter-page form {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  border: 1px solid #e5e7eb;
+
+  max-width: 650px;
+}
+
+.recruiter-page form input,
+.recruiter-page form textarea {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #dbe1ea;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.recruiter-page form textarea {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+.recruiter-page form button {
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 6px;
+
+  padding: 12px 22px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-button,
+  .register-nav-button,
+  .logout-button {
+    padding: 8px 9px;
+
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 60px 25px;
+
+    min-height: 600px;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .search-box {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .search-box input + input {
+    border-left: none;
+
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .search-box button {
+    padding: 14px;
+
+    margin-top: 5px;
+  }
+
+  .auth-card {
+    padding: 28px 22px;
+  }
+
+  .role-option {
+    display: flex;
+
+    margin-bottom: 10px;
+
+    margin-right: 0;
+  }
+
+}
